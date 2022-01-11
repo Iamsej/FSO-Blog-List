@@ -64,7 +64,6 @@ const mostLikes = (blogs) => {
         return midHash
     }
     const midList = likeSum(authList)
-    console.log(midList)
     const end = Object.keys(midList).reduce(
         (a, b) => midList[a] > midList[b] ? a : b, null)
     
