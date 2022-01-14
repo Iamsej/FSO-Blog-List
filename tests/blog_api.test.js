@@ -42,7 +42,7 @@ test('blogs have id instead of _id', async () => {
     expect(keys).toContain('id')
 })
 
-test('POST saves blogs properly', async () => {
+/* DEPRECATED test('POST saves blogs properly', async () => {
     const blog = new Blog({
         title: 'The Angry GM',
         author: 'Scott Rehm',
@@ -93,7 +93,7 @@ test('if title or url are missing, 400', async () => {
         .post('/api/blogs')
         .send(noTitle)
         .expect(400)
-})
+}) DEPRECATED*/
 
 afterAll(() => {
     mongoose.connection.close()
